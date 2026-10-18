@@ -1,8 +1,8 @@
-| title | DMX-Unit-DIY |
+| title | Handbrake-DIY |
 | --- | --- |
 | author | GLOXIOU |
-| description | A DIY project for a DMX controller box that enables stable lighting control via Wi-Fi or USB, featuring both Art-Net and DMX outputs. |
-| created_at | 2026-09-08 |
+| description | A DIY project for a simeracing handbrake, print in 3D and controlled by a ESP32.
+| created_at | 2026-10-18 |
 
 # Day 1: Defining system & idea search & inspiration
 
