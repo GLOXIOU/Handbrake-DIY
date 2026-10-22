@@ -29,3 +29,46 @@ Now here's a litlle plan to see where is it going:
 ![Image 2](images/img-2.png)
 
 **Total time spent: 2 hours**
+
+# Day 2: 3D Modelling
+
+Today, I'm in vacacion so I have a lot of time to make the case. So it's just need to be small, and usable, and easy.
+
+So I created the folder for the 3D files, you can check it [just here](3D-files). After that, I lunched Fusion 360, and started modeling.
+
+The first thing I made was the base of the case, where all the componments will be. It's 160x62mm.
+
+![Image 3](images/img-3.png)
+
+Then, I made all the wholes and support for the screws, and others thinngs. I also added 2 litlle support thing on the two sides; So the height is changed.
+
+![Image 4](images/img-4.png)
+
+Next I made the actual handbrake in one piece, with the whole for the potentiometer.
+
+![Image 5](images/img-5.png)
+
+After that, I made the side cover, with a litlle cover for the potentiometer and his cable that was exposed like on the first picture. There's also two wholes to clip the cover.
+
+![Image 6](images/img-6.png)
+![Image 7](images/img-7.png)
+
+And then, I made the assembly with the ESP, the screws, the potentiometer and the spring. So here's the final look of the model:
+
+![Image 8](images/img-8.png)
+
+Position 1 - Normal position when the handbrake is not engaged:
+
+![Image 9](images/img-9.png)
+
+Position 2 - Position when the handbrake is engaged:
+
+![Image 10](images/img-10.png)
+
+So, all that’s left to do is the code and the README, which I plan to tackle tomorrow.
+
+The case is 175mm by 249 by 62, and the support is adjustable kinda.
+
+I know I didn’t write much in the log today, but I spent the whole day doing a lot of modeling.
+
+**Total time spent: 5 hours**
