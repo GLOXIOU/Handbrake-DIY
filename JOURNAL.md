@@ -69,6 +69,31 @@ So, all that’s left to do is the code and the README, which I plan to tackle t
 
 The case is 175mm by 249 by 62, and the support is adjustable kinda.
 
-I know I didn’t write much in the log today, but I spent the whole day doing a lot of modeling.
+I know I didn’t write much in the log today, but I spent the whole day doing a lot of modeling. You can check the printable file [here](3D-files/to%20print/), and the step and assembly file [here](3D-files).
 
 **Total time spent: 5 hours**
+
+# Day 3: Firmware and README
+
+Hey ! So today I just need to do the firmware, wich will not take a while, and after that I will be able to make the README.
+
+SO I started by making a wiring diagram to make firmware development easier:
+
+![Image 11](images/img-11.png)
+
+Then, I started the code. So, there’s nothing too complicated here, it includes features like calibration triggered by pressing the "boot" button with the values ​​stored directly on the ESP. The program is also recognized by games as a game controller.
+
+I was able to compile the code and test it on an ESP32 I had at home, using a potentiometer (which wasn't the right size, but served the purpose for testing), and it works perfectly !
+
+The code really didn't take long to put together, nor was it complex—it only took about an hour to write and test everything...
+
+![Image 12](images/img-12.png)
+
+Here's the [file](firmware.ino) for the firmware.
+
+After that I made the README that you can check just [here](README.md).
+And the [BOM](BOM.csv), just copy and paste the table I had already created in the journal.
+
+And afetr a bit of a verification for all the project, it's finished ! The thing that taked the most of the time was the 3D modeling...
+
+**Total time spent: 2.5 hours**
