@@ -34,10 +34,18 @@ The current design uses the following main components:
 | [ESP-32 S3](https://fr.aliexpress.com/item/1005008809316571.html?spm=a2g0o.cart.0.0.548d378dNH9kOS&mp=1&pdp_npi=6%40dis%21USD%21USD+8.93%21USD+8.93%21%21USD+8.93%21%21%21%400b5e1a3817923130709475572e0eae%2112000046760012013%21ct%21FR%218054027548%21%211%210%21&pdp_ext_f=%7B%22cart2PdpParams%22%3A%7B%22pdpBusinessMode%22%3A%22retail%22%7D%7D&gatewayAdapt=glo2fra) | 8.93$ |
 | [WH148 15mm 10K](https://fr.aliexpress.com/item/1005006982762711.html?spm=a2g0o.productlist.main.1.197e3edeJYxCHA&algo_pvid=f94c3114-cbe6-4de2-8d58-85370a840220&algo_exp_id=f94c3114-cbe6-4de2-8d58-85370a840220-0&pdp_ext_f=%7B%22order%22%3A%221994%22%2C%22eval%22%3A%221%22%2C%22orig_sl_item_id%22%3A%221005006982762711%22%2C%22orig_item_id%22%3A%221005006213044445%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21USD%213.18%213.18%21%21%2121.18%2121.17%21%402161390617923146960198400e0fe5%2112000038936657843%21sea%21FR%218054027548%21X%211%210%21n_tag%3A-29911%3Bd%3A8484f755%3Bm03_new_user%3A-29895&curPageLogUid=LIIvkVuM1vlX&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005006982762711%7C_p_origin_prod%3A1005006213044445) | 3.86$ |
 | [Springs](https://fr.aliexpress.com/item/1005003386795893.html?spm=a2g0o.productlist.main.2.6e862458LRFzBi&algo_pvid=81b760a6-ee4f-43ec-b65e-82b657dbee44&algo_exp_id=81b760a6-ee4f-43ec-b65e-82b657dbee44-1&pdp_ext_f=%7B%22order%22%3A%2227%22%2C%22spu_best_type%22%3A%22price%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21USD%214.51%214.51%21%21%214.51%214.51%21%400b15831117923148933946859e0cf3%2112000025541020499%21sea%21FR%218054027548%21X%211%210%21n_tag%3A-29911%3Bd%3A8484f755%3Bm03_new_user%3A-29895&curPageLogUid=1MjvOHPb86G8&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005003386795893%7C_p_origin_prod%3A) | 7.08$ |
-| Total | 19.87$ |
+| [M6 x 35 mm screw](https://www.amazon.fr/dp/B084FC3P6B) | 13.21$ |
+| [M6 lock nut (nylon insert)](https://www.amazon.fr/dp/B0CPGXJMMZ) | 9.79$ |
+| [M6 washers](https://www.amazon.fr/dp/B0CZ766G1K) | 8.02$ |
+| [M5 x 40 mm screw](https://www.amazon.fr/dp/B07VQK65MN) | 3.80$ |
+| [M5 nuts](https://www.amazon.fr/dp/B0B39KNQPY) | 11.22$ |
+| [M5 washers](https://www.amazon.fr/dp/B07Q6Z1Z2D) | 9.56$ |
+| [M3 x 10 mm socket head screws (cover)](https://www.amazon.fr/dp/B0BRGGMMD5) | 9.41$ |
+| [M5 screws to fix the case on the rig](https://www.amazon.fr/dp/B07VMH2KTM) | 2.70$ |
+| Total | 87.58$ |
 
 The spring is a compression springs, length 30mm, wire diameter 1.2mm, outer diameter 10mm.
-To that, you need to have 1 screw M6×35 mm; 1 M6 lock nut (with nylon insert); 2 M6 washers; 1 M5 × 40 mm screw; 2 M5 nuts; 2 M5 washers. Don't buy it online, in a local store that will be much cheaper !
+To that, you need to have 1 screw M6×35 mm; 1 M6 lock nut (with nylon insert); 2 M6 washers; 1 M5 × 40 mm screw; 2 M5 nuts; 2 M5 washers; 4 M3 × 10 mm socket head screws for the cover. Don't buy it online, in a local store that will be much cheaper ! You really can economise like 40 dollars
 
 The complete component list is available in [BOM.csv](BOM.csv).
 
@@ -87,6 +95,7 @@ Here's a look at it:
 ![Box](images/img-10.png)
 
 Assembly file: [Handbrake-DIY.step](3D-files/Handbrake-DIY.step)
+Step files: [Step file folder](3D-files/step%20file/)
 
 ---
 
@@ -97,8 +106,8 @@ Everything you need to build the HandBrake from this README alone.
 ### Tools
 
 * 3D printer (the parts fit on a 256 x 256 mm bed, e.g. Bambu Lab A1)
-* Soldering iron and solder
-* Wrenches/sockets for M5 and M6, screwdriver
+* Soldering iron and solder, 3 Dupont wires (about 10 cm)
+* Wrenches/sockets for M5 and M6, 2.5 mm and 4 mm hex keys (M3 and M5 socket head screws)
 * Computer with the [Arduino IDE](https://www.arduino.cc/en/software)
 * A USB-C data cable
 
@@ -109,13 +118,14 @@ Everything you need to build the HandBrake from this README alone.
 | [ESP-32 S3](https://fr.aliexpress.com/item/1005008809316571.html?spm=a2g0o.cart.0.0.548d378dNH9kOS&mp=1&pdp_npi=6%40dis%21USD%21USD+8.93%21USD+8.93%21%21USD+8.93%21%21%21%400b5e1a3817923130709475572e0eae%2112000046760012013%21ct%21FR%218054027548%21%211%210%21&pdp_ext_f=%7B%22cart2PdpParams%22%3A%7B%22pdpBusinessMode%22%3A%22retail%22%7D%7D&gatewayAdapt=glo2fra) | 1 |
 | [WH148 15mm 10K](https://fr.aliexpress.com/item/1005006982762711.html?spm=a2g0o.productlist.main.1.197e3edeJYxCHA&algo_pvid=f94c3114-cbe6-4de2-8d58-85370a840220&algo_exp_id=f94c3114-cbe6-4de2-8d58-85370a840220-0&pdp_ext_f=%7B%22order%22%3A%221994%22%2C%22eval%22%3A%221%22%2C%22orig_sl_item_id%22%3A%221005006982762711%22%2C%22orig_item_id%22%3A%221005006213044445%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21USD%213.18%213.18%21%21%2121.18%2121.17%21%402161390617923146960198400e0fe5%2112000038936657843%21sea%21FR%218054027548%21X%211%210%21n_tag%3A-29911%3Bd%3A8484f755%3Bm03_new_user%3A-29895&curPageLogUid=LIIvkVuM1vlX&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005006982762711%7C_p_origin_prod%3A1005006213044445) | 1 |
 | [Springs - Length 30 mm, wire 1.2 mm, outer diameter 10 mm](https://fr.aliexpress.com/item/1005003386795893.html?spm=a2g0o.productlist.main.2.6e862458LRFzBi&algo_pvid=81b760a6-ee4f-43ec-b65e-82b657dbee44&algo_exp_id=81b760a6-ee4f-43ec-b65e-82b657dbee44-1&pdp_ext_f=%7B%22order%22%3A%2227%22%2C%22spu_best_type%22%3A%22price%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21USD%214.51%214.51%21%21%214.51%214.51%21%400b15831117923148933946859e0cf3%2112000025541020499%21sea%21FR%218054027548%21X%211%210%21n_tag%3A-29911%3Bd%3A8484f755%3Bm03_new_user%3A-29895&curPageLogUid=1MjvOHPb86G8&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005003386795893%7C_p_origin_prod%3A) | 1 |
-| Dupont wires (about 10cm) | 3 |
-| M5 washers | 2 |
-| M5 nuts and 40mm screws | 2 |
-| M6 nuts | 1 |
-| M6 35mm screw | 1 |
-| M6 40mm screw | 1 |
-| M6 lock nut (nylon insert) | 1 |
+| [M6 x 35 mm screw](https://www.amazon.fr/dp/B084FC3P6B) | 1 |
+| [M6 lock nut (nylon insert)](https://www.amazon.fr/dp/B0CPGXJMMZ) | 1 |
+| [M6 washers](https://www.amazon.fr/dp/B0CZ766G1K) | 2 |
+| [M5 x 40 mm screw](https://www.amazon.fr/dp/B07VQK65MN) | 1 |
+| [M5 nuts](https://www.amazon.fr/dp/B0B39KNQPY) | 2 |
+| [M5 washers](https://www.amazon.fr/dp/B07Q6Z1Z2D) | 2 |
+| [M3 x 10 mm socket head screws (cover)](https://www.amazon.fr/dp/B0BRGGMMD5) | 4 |
+| [M5 screws to fix the case on the rig (length depends on the rig)](https://www.amazon.fr/dp/B07VMH2KTM) | 4 |
 
 The screws, nuts and washers are cheaper in a local hardware store.
 
@@ -144,8 +154,9 @@ The potentiometer has 3 pins. Looking at the pins, the wiring is:
 1. Solder the 3 wires to the potentiometer (see above) and connect them to the ESP32-S3.
 2. Place the ESP32-S3 at the bottom right of the case, with its USB-C port facing the opening on the side of the case.
 3. Install the potentiometer on the lever pivot, inside the case.
-4. Assemble the spring guide: M5 x 40 screw, with a washer and a nut on each side of the bottom support of the case, and the compression spring around the screw. The spring pushes the back of the lever to bring it back to its rest position.
-5. Fit the lever on its pivot with the M6 x 35 screw, the two M6 washers and the M6 lock nut. Tighten until there is no play, but the lever must still move freely.
+4. Assemble the spring guide: put the M5 x 40 screw through the bottom support of the case from underneath (the head goes in the recess), and lock it on top with a washer and a nut. Screw the second nut onto the screw, put the second washer on it, then slide the compression spring around the screw. The spring sits on this washer and pushes the back of the lever to bring it back to its rest position. Move this nut up or down to make the handbrake harder or softer.
+5. Put the M6 x 35 screw through the back of the case with a washer under its head, and lock it inside the case with the second washer and the M6 lock nut. You can tighten it fully: the nut holds the screw on the case, not the lever. Then slide the lever onto the end of the screw: it turns freely on it, held between the nut and the potentiometer.
+6. Close the case with the cover and the 4 M3 x 10 screws. They screw directly into the plastic, so don't overtighten.
 
 ### 4. Flash the firmware
 
@@ -190,7 +201,7 @@ The settings are at the top of [firmware.ino](firmware.ino):
 
 ## Estimate cost
 
-The current estimate is around $25 of components with the screws.
+The current estimate is 87.58$: 19.87$ of components on AliExpress, plus 67.71$ of screws, nuts and washers on Amazon. They are sold in packs, so in a local hardware store it will be much cheaper.
 This does not include assembly, enclosure parts or future design changes, and print filament that I already have.
 
 ---
